@@ -1,0 +1,27 @@
+@import "../../css/colors.css";
+@import "../../css/units.css";
+
+.editor-container {
+    position: relative;
+    left: 15%;
+    padding: calc(2 * $space);
+    text-align: center;
+}
+
+.image {
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+.text {
+    color: $text-primary;
+    max-width: 640px;
+}
+
+.add-sound-text {
+    font-size: 36px;
+}
+
+.howto-add-sound {
+    font-size: 24px;
+}

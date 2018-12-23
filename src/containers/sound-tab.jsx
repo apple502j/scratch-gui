@@ -5,6 +5,7 @@ import {defineMessages, intlShape, injectIntl} from 'react-intl';
 import VM from 'scratch-vm';
 
 import AssetPanel from '../components/asset-panel/asset-panel.jsx';
+import NoSound from '../components/sound-editor/no-sound.jsx';
 import soundIcon from '../components/asset-panel/icon--sound.svg';
 import soundIconRtl from '../components/asset-panel/icon--sound-rtl.svg';
 import addSoundFromLibraryIcon from '../components/asset-panel/icon--add-sound-lib.svg';
@@ -240,7 +241,9 @@ class SoundTab extends React.Component {
             >
                 {sprite.sounds && sprite.sounds[this.state.selectedSoundIndex] ? (
                     <SoundEditor soundIndex={this.state.selectedSoundIndex} />
-                ) : null}
+                ) : (
+                    <NoSound />
+                )}
                 {this.props.soundRecorderVisible ? (
                     <RecordModal
                         onNewSound={this.handleNewSound}
