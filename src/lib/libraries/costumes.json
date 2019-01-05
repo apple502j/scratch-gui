@@ -348,7 +348,7 @@
         ]
     },
     {
-        "name": "Arrow1-a",
+        "name": "Arrow-a",
         "md5": "62f8794dd120e9b4ead4d098d50fc64b.svg",
         "type": "costume",
         "tags": [
@@ -363,7 +363,7 @@
         ]
     },
     {
-        "name": "Arrow1-b",
+        "name": "Arrow-b",
         "md5": "a157dc7e33d7c7a048af933de999e397.svg",
         "type": "costume",
         "tags": [
@@ -378,7 +378,7 @@
         ]
     },
     {
-        "name": "Arrow1-c",
+        "name": "Arrow-c",
         "md5": "d3b389e91f7beb22b2b1a80af09990ee.svg",
         "type": "costume",
         "tags": [
@@ -393,7 +393,7 @@
         ]
     },
     {
-        "name": "Arrow1-d",
+        "name": "Arrow-d",
         "md5": "412717ff731e9f19003a5840054057eb.svg",
         "type": "costume",
         "tags": [
@@ -632,7 +632,7 @@
         ]
     },
     {
-        "name": "Balloon1-a",
+        "name": "Balloon-a",
         "md5": "bc96a1fb5fe794377acd44807e421ce2.svg",
         "type": "costume",
         "tags": [
@@ -650,7 +650,7 @@
         ]
     },
     {
-        "name": "Balloon1-b",
+        "name": "Balloon-b",
         "md5": "d7bb51d9c38af6314bd2b4058d2a592d.svg",
         "type": "costume",
         "tags": [
@@ -668,7 +668,7 @@
         ]
     },
     {
-        "name": "Balloon1-c",
+        "name": "Balloon-c",
         "md5": "247cef27b665d77d9efaca69327cae77.svg",
         "type": "costume",
         "tags": [
@@ -1052,7 +1052,7 @@
         ]
     },
     {
-        "name": "Bell1",
+        "name": "Bell",
         "md5": "f35056c772395455d703773657e1da6e.svg",
         "type": "costume",
         "tags": [
@@ -1136,7 +1136,7 @@
         ]
     },
     {
-        "name": "Bowl-a",
+        "name": "Bowl",
         "md5": "86f616639846f06fef29931e6b9b59de.svg",
         "type": "costume",
         "tags": [
@@ -1761,22 +1761,6 @@
         ]
     },
     {
-        "name": "Cat 2",
-        "md5": "01ae57fd339529445cb890978ef8a054.svg",
-        "type": "costume",
-        "tags": [
-            "kitty",
-            "kitten",
-            "animals",
-            "mammal"
-        ],
-        "info": [
-            87,
-            39,
-            1
-        ]
-    },
-    {
         "name": "Cat Flying-a",
         "md5": "bf6b9f91e6928be67eda5154ca5fb2c6.svg",
         "type": "costume",
@@ -1809,7 +1793,7 @@
         ]
     },
     {
-        "name": "Cat-a",
+        "name": "Cat 1-a",
         "md5": "b7853f557e4426412e64bb3da6531a99.svg",
         "type": "costume",
         "tags": [
@@ -1828,7 +1812,7 @@
         ]
     },
     {
-        "name": "Cat-b",
+        "name": "Cat 1-b",
         "md5": "e6ddc55a6ddd9cc9d84fe0b4c21e016f.svg",
         "type": "costume",
         "tags": [
@@ -1843,6 +1827,22 @@
         "info": [
             46,
             53,
+            1
+        ]
+    },
+    {
+        "name": "Cat 2",
+        "md5": "01ae57fd339529445cb890978ef8a054.svg",
+        "type": "costume",
+        "tags": [
+            "kitty",
+            "kitten",
+            "animals",
+            "mammal"
+        ],
+        "info": [
+            87,
+            39,
             1
         ]
     },
@@ -2166,7 +2166,7 @@
         ]
     },
     {
-        "name": "Cloud",
+        "name": "Cloud 1",
         "md5": "47005a1f20309f577a03a67abbb6b94e.svg",
         "type": "costume",
         "tags": [
@@ -2181,7 +2181,7 @@
         ]
     },
     {
-        "name": "Cloud-a",
+        "name": "Cloud 2-a",
         "md5": "c7d7de8e29179407f03b054fa640f4d0.svg",
         "type": "costume",
         "tags": [
@@ -2197,7 +2197,7 @@
         ]
     },
     {
-        "name": "Cloud-b",
+        "name": "Cloud 2-b",
         "md5": "d8595350ebb460494c9189dabb968336.svg",
         "type": "costume",
         "tags": [
@@ -2213,7 +2213,7 @@
         ]
     },
     {
-        "name": "Cloud-c",
+        "name": "Cloud 2-c",
         "md5": "395fc991e64ac0a4aa46758ab4bc65cb.svg",
         "type": "costume",
         "tags": [
@@ -2229,7 +2229,7 @@
         ]
     },
     {
-        "name": "Cloud-d",
+        "name": "Cloud 2-d",
         "md5": "1767e704acb11ffa409f77cc79ba7e86.svg",
         "type": "costume",
         "tags": [
@@ -2245,7 +2245,7 @@
         ]
     },
     {
-        "name": "Convertible",
+        "name": "Convertible 1",
         "md5": "5b883f396844ff5cfecd7c95553fa4fb.png",
         "type": "costume",
         "tags": [
@@ -2259,7 +2259,7 @@
         ]
     },
     {
-        "name": "Convertible 3",
+        "name": "Convertible 2",
         "md5": "b6ac3c9e1789cba2302d2ef82d62d019.svg",
         "type": "costume",
         "tags": [
@@ -2814,7 +2814,7 @@
         ]
     },
     {
-        "name": "Diver1",
+        "name": "Diver 1",
         "md5": "853803d5600b66538474909c5438c8ee.svg",
         "type": "costume",
         "tags": [
@@ -2832,7 +2832,7 @@
         ]
     },
     {
-        "name": "Diver2",
+        "name": "Diver 2",
         "md5": "248d3e69ada69a64b1077149ef6a931a.svg",
         "type": "costume",
         "tags": [
@@ -3029,7 +3029,7 @@
         ]
     },
     {
-        "name": "Dog1-a",
+        "name": "Dog 1-a",
         "md5": "39ddefa0cc58f3b1b06474d63d81ef56.svg",
         "type": "costume",
         "tags": [
@@ -3045,7 +3045,7 @@
         ]
     },
     {
-        "name": "Dog1-b",
+        "name": "Dog 1-b",
         "md5": "598f4aa3d8f671375d1d2b3acf753416.svg",
         "type": "costume",
         "tags": [
@@ -3061,7 +3061,7 @@
         ]
     },
     {
-        "name": "Dog2-a",
+        "name": "Dog 2-a",
         "md5": "e921f865b19b27cd99e16a341dbf09c2.svg",
         "type": "costume",
         "tags": [
@@ -3077,7 +3077,7 @@
         ]
     },
     {
-        "name": "Dog2-b",
+        "name": "Dog 2-b",
         "md5": "891f2fb7daf79ba8b224a9173eeb0a63.svg",
         "type": "costume",
         "tags": [
@@ -3093,7 +3093,7 @@
         ]
     },
     {
-        "name": "Dog2-c",
+        "name": "Dog 2-c",
         "md5": "cd236d5eef4431dea82983ac9eec406b.svg",
         "type": "costume",
         "tags": [
@@ -3287,7 +3287,7 @@
         ]
     },
     {
-        "name": "Dragon-a",
+        "name": "Dragon 1-a",
         "md5": "8aed65cee4cfe22b4f4b8e749092dbbb.svg",
         "type": "costume",
         "tags": [
@@ -3303,7 +3303,7 @@
         ]
     },
     {
-        "name": "Dragon-b",
+        "name": "Dragon 1-b",
         "md5": "c3360f16bb78b136d9911325da9fda49.svg",
         "type": "costume",
         "tags": [
@@ -3319,7 +3319,7 @@
         ]
     },
     {
-        "name": "Dragon-c",
+        "name": "Dragon 1-c",
         "md5": "e81af82ebde008c167ebc6874df3ecb4.svg",
         "type": "costume",
         "tags": [
@@ -3335,7 +3335,7 @@
         ]
     },
     {
-        "name": "Dragon1-a",
+        "name": "Dragon 2-a",
         "md5": "ee0082b436d6d5dc3de33047166e7bf2.svg",
         "type": "costume",
         "tags": [
@@ -3351,7 +3351,7 @@
         ]
     },
     {
-        "name": "Dragon1-b",
+        "name": "Dragon 2-b",
         "md5": "bb58ce36997fa205a86a085f202837fd.svg",
         "type": "costume",
         "tags": [
@@ -3524,7 +3524,7 @@
         ]
     },
     {
-        "name": "Drum-kit",
+        "name": "Drum-kit-a",
         "md5": "131d040d86ecea62ccd175a8709c7866.svg",
         "type": "costume",
         "tags": [
@@ -4280,7 +4280,7 @@
         ]
     },
     {
-        "name": "Frog",
+        "name": "Frog 1",
         "md5": "285483a688eed2ff8010c65112f99c41.svg",
         "type": "costume",
         "tags": [
@@ -4693,7 +4693,7 @@
         ]
     },
     {
-        "name": "Glasses-e",
+        "name": "Glasses-d",
         "md5": "6b706718a8c350522c3f29fb82b40327.svg",
         "type": "costume",
         "tags": [
@@ -5102,7 +5102,7 @@
         ]
     },
     {
-        "name": "Guitar-electric1-a",
+        "name": "Guitar-electric 1-a",
         "md5": "b2b469b9d11fd23bdd671eab94dc58ff.svg",
         "type": "costume",
         "tags": [
@@ -5116,7 +5116,7 @@
         ]
     },
     {
-        "name": "Guitar-electric1-b",
+        "name": "Guitar-electric 1-b",
         "md5": "3632184c19c66a088a99568570d61b13.svg",
         "type": "costume",
         "tags": [
@@ -5130,7 +5130,7 @@
         ]
     },
     {
-        "name": "Guitar-electric2-a",
+        "name": "Guitar-electric 2-a",
         "md5": "1fc433b89038f9e16092c9f4d7514cca.svg",
         "type": "costume",
         "tags": [
@@ -5144,7 +5144,7 @@
         ]
     },
     {
-        "name": "Guitar-electric2-b",
+        "name": "Guitar-electric 2-b",
         "md5": "7b843dbc93d4b2ea31fa67cca3d5077c.svg",
         "type": "costume",
         "tags": [
@@ -5659,7 +5659,7 @@
         ]
     },
     {
-        "name": "Hippo1-a",
+        "name": "Hippo 1-a",
         "md5": "c1353c4a5eec5e6f32ed053e6f6e8f99.svg",
         "type": "costume",
         "tags": [
@@ -5677,7 +5677,7 @@
         ]
     },
     {
-        "name": "Hippo1-b",
+        "name": "Hippo 1-b",
         "md5": "e65ed93bbb9cccf698fc7e774ab609a6.svg",
         "type": "costume",
         "tags": [
@@ -6418,7 +6418,7 @@
         ]
     },
     {
-        "name": "Ladybug2",
+        "name": "Ladybug",
         "md5": "f16a1ccc69a4a8190a927f1595aa7bfa.svg",
         "type": "costume",
         "tags": [
@@ -6434,7 +6434,7 @@
         ]
     },
     {
-        "name": "Ladybug2-a",
+        "name": "Ladybug-a",
         "md5": "c018a3eed966d5f92c69f2188dfd2aae.svg",
         "type": "costume",
         "tags": [
@@ -6451,7 +6451,7 @@
         ]
     },
     {
-        "name": "Ladybug2-b",
+        "name": "Ladybug-b",
         "md5": "a2bb15ace808e070a2b815502952b292.svg",
         "type": "costume",
         "tags": [
@@ -7225,7 +7225,7 @@
         ]
     },
     {
-        "name": "Mouse1-a",
+        "name": "Mouse-a",
         "md5": "e1f0c26afecbe9d4b9923d8e6bf489a8.svg",
         "type": "costume",
         "tags": [
@@ -7240,7 +7240,7 @@
         ]
     },
     {
-        "name": "Mouse1-b",
+        "name": "Mouse-b",
         "md5": "f5e477a3f94fc98ba3cd927228405646.svg",
         "type": "costume",
         "tags": [
@@ -7438,7 +7438,7 @@
         ]
     },
     {
-        "name": "Orange",
+        "name": "Orange 1",
         "md5": "27d5dfbadceea215e983d2641ce3e51f.svg",
         "type": "costume",
         "tags": [
@@ -7452,7 +7452,7 @@
         ]
     },
     {
-        "name": "Orange2-a",
+        "name": "Orange 2-a",
         "md5": "8a7d8515df41f83c1326ec3233a3a42a.svg",
         "type": "costume",
         "tags": [
@@ -7467,7 +7467,7 @@
         ]
     },
     {
-        "name": "Orange2-b",
+        "name": "Orange 2-b",
         "md5": "70c7f1822ffdb37157c304273dae9102.svg",
         "type": "costume",
         "tags": [
@@ -7744,7 +7744,7 @@
         ]
     },
     {
-        "name": "Party Hat-e",
+        "name": "Party Hat-c",
         "md5": "e69516f2a9bb6d632fdaba4fadd8f8f1.svg",
         "type": "costume",
         "tags": [
@@ -7786,7 +7786,7 @@
         ]
     },
     {
-        "name": "Penguin-a",
+        "name": "Penguin 1-a",
         "md5": "0e78708b8988802d2209a34b50292bd3.svg",
         "type": "costume",
         "tags": [
@@ -7808,7 +7808,7 @@
         ]
     },
     {
-        "name": "Penguin-b",
+        "name": "Penguin 1-b",
         "md5": "43af2a0b7f922ec5dc94217b2f3e08e4.svg",
         "type": "costume",
         "tags": [
@@ -7830,7 +7830,7 @@
         ]
     },
     {
-        "name": "Penguin-c",
+        "name": "Penguin 1-c",
         "md5": "4f35c3940957e3ffc2e83a2565942171.svg",
         "type": "costume",
         "tags": [
@@ -7852,7 +7852,7 @@
         ]
     },
     {
-        "name": "Penguin2-a",
+        "name": "Penguin 2-a",
         "md5": "c17d9e4bdb59c574e0c34aa70af516da.svg",
         "type": "costume",
         "tags": [
@@ -7868,7 +7868,7 @@
         ]
     },
     {
-        "name": "Penguin2-b",
+        "name": "Penguin 2-b",
         "md5": "b224a582395e0847c2ef4eefcfbc4546.svg",
         "type": "costume",
         "tags": [
@@ -7884,7 +7884,7 @@
         ]
     },
     {
-        "name": "Penguin2-c",
+        "name": "Penguin 2-c",
         "md5": "35fec7aa5f60cca945fe0615413f1f08.svg",
         "type": "costume",
         "tags": [
@@ -7900,7 +7900,7 @@
         ]
     },
     {
-        "name": "Penguin2-d",
+        "name": "Penguin 2-d",
         "md5": "18fa51a64ebd5518f0c5c465525346e5.svg",
         "type": "costume",
         "tags": [
@@ -7916,7 +7916,7 @@
         ]
     },
     {
-        "name": "Pico Walk1",
+        "name": "Pico Walk 1",
         "md5": "8eab5fe20dd249bf22964298b1d377eb.svg",
         "type": "costume",
         "tags": [
@@ -7930,7 +7930,7 @@
         ]
     },
     {
-        "name": "Pico Walk2",
+        "name": "Pico Walk 2",
         "md5": "39ecd3c38d3f2cd81e3a17ee6c25699f.svg",
         "type": "costume",
         "tags": [
@@ -7944,7 +7944,7 @@
         ]
     },
     {
-        "name": "Pico Walk3",
+        "name": "Pico Walk 3",
         "md5": "43f7d92dcf9eadf77c07a6fc1eb4104f.svg",
         "type": "costume",
         "tags": [
@@ -7958,7 +7958,7 @@
         ]
     },
     {
-        "name": "Pico Walk4",
+        "name": "Pico Walk 4",
         "md5": "2582d012d57bca59bc0315c5c5954958.svg",
         "type": "costume",
         "tags": [
@@ -8095,7 +8095,7 @@
         ]
     },
     {
-        "name": "Planet2",
+        "name": "Planet",
         "md5": "978784738c1d9dd4b1d397fd18bdf406.svg",
         "type": "costume",
         "tags": [
@@ -8655,7 +8655,7 @@
         ]
     },
     {
-        "name": "Retro Robot A",
+        "name": "Retro Robot-a",
         "md5": "a17c1ce38c261395ae268f3b8a9037db.svg",
         "type": "costume",
         "tags": [
@@ -8668,7 +8668,7 @@
         ]
     },
     {
-        "name": "Retro Robot B",
+        "name": "Retro Robot-b",
         "md5": "bfb5afe62358ef542f118299bb53d4b7.svg",
         "type": "costume",
         "tags": [
@@ -8681,7 +8681,7 @@
         ]
     },
     {
-        "name": "Retro Robot C",
+        "name": "Retro Robot-c",
         "md5": "f925e3bde178001133a11fa97847a9ae.svg",
         "type": "costume",
         "tags": [
@@ -9109,7 +9109,7 @@
         ]
     },
     {
-        "name": "Shark-a",
+        "name": "Shark 1-a",
         "md5": "4ca6776e9c021e8b21c3346793c9361d.svg",
         "type": "costume",
         "tags": [
@@ -9125,7 +9125,7 @@
         ]
     },
     {
-        "name": "Shark-b",
+        "name": "Shark 1-b",
         "md5": "0bb623f0bbec53ee9667cee0b7ad6d47.svg",
         "type": "costume",
         "tags": [
@@ -9141,7 +9141,7 @@
         ]
     },
     {
-        "name": "Shark2-a",
+        "name": "Shark 2-a",
         "md5": "7c0a907eae79462f69f8e2af8e7df828.svg",
         "type": "costume",
         "tags": [
@@ -9160,7 +9160,7 @@
         ]
     },
     {
-        "name": "Shark2-b",
+        "name": "Shark 2-b",
         "md5": "cff9ae87a93294693a0650b38a7a33d2.svg",
         "type": "costume",
         "tags": [
@@ -9179,7 +9179,7 @@
         ]
     },
     {
-        "name": "Shark2-c",
+        "name": "Shark 2-c",
         "md5": "afeae3f998598424f7c50918507f6ce6.svg",
         "type": "costume",
         "tags": [
@@ -9198,7 +9198,7 @@
         ]
     },
     {
-        "name": "Shirt-a",
+        "name": "Shirt",
         "md5": "659465944053fe6fb6aa1ed0e11be9aa.svg",
         "type": "costume",
         "tags": [
@@ -9316,7 +9316,7 @@
         ]
     },
     {
-        "name": "Singer1",
+        "name": "Singer",
         "md5": "e47ef1af3b925e5ac9e3b3f809d440b3.svg",
         "type": "costume",
         "tags": [
@@ -9366,7 +9366,7 @@
         ]
     },
     {
-        "name": "Skeleton-d",
+        "name": "Skeleton-c",
         "md5": "155efd0dfdc59a0e2a546a4a7d068ece.svg",
         "type": "costume",
         "tags": [
@@ -9384,7 +9384,7 @@
         ]
     },
     {
-        "name": "Skeleton-e",
+        "name": "Skeleton-d",
         "md5": "c41a11468602522cdc6dec7043215f65.svg",
         "type": "costume",
         "tags": [
@@ -10149,7 +10149,7 @@
         ]
     },
     {
-        "name": "Tree1",
+        "name": "Tree",
         "md5": "8c40e2662c55d17bc384f47165ac43c1.svg",
         "type": "costume",
         "tags": [
@@ -10270,7 +10270,7 @@
         ]
     },
     {
-        "name": "Unicorn",
+        "name": "Unicorn 1",
         "md5": "c491fd1867375aa0160b013788d188e5.svg",
         "type": "costume",
         "tags": [
@@ -10493,7 +10493,7 @@
         ]
     },
     {
-        "name": "Witch",
+        "name": "Witch 1",
         "md5": "c991196a708294535a1dbdce7189c23c.svg",
         "type": "costume",
         "tags": [
@@ -10511,7 +10511,7 @@
         ]
     },
     {
-        "name": "Witch-a",
+        "name": "Witch 2-a",
         "md5": "cbc54e15cd62f0c16369587377636099.svg",
         "type": "costume",
         "tags": [
@@ -10529,7 +10529,7 @@
         ]
     },
     {
-        "name": "Witch-b",
+        "name": "Witch 2-b",
         "md5": "64d2c4c51e6cb6008cd5e93f77e6f591.svg",
         "type": "costume",
         "tags": [
@@ -10547,7 +10547,7 @@
         ]
     },
     {
-        "name": "Witch-c",
+        "name": "Witch 2-c",
         "md5": "00b768c3da5b4ee3efddf05d1eb88de2.svg",
         "type": "costume",
         "tags": [
@@ -10565,7 +10565,7 @@
         ]
     },
     {
-        "name": "Witch-d",
+        "name": "Witch 2-d",
         "md5": "4fe4c0ee34a9028f2c6988b7294a61c1.svg",
         "type": "costume",
         "tags": [
@@ -10723,7 +10723,7 @@
         ]
     },
     {
-        "name": "Block-a",
+        "name": "Block-A",
         "md5": "602a16930a8050e1298e1a0ae844363e.svg",
         "type": "costume",
         "tags": [
@@ -10737,7 +10737,7 @@
         ]
     },
     {
-        "name": "Block-b",
+        "name": "Block-B",
         "md5": "f8c683cf71660e8ac1f8855599857a25.svg",
         "type": "costume",
         "tags": [
@@ -10751,7 +10751,7 @@
         ]
     },
     {
-        "name": "Block-c",
+        "name": "Block-C",
         "md5": "f8f4cc686ffc5a4113a99f70b09abd32.svg",
         "type": "costume",
         "tags": [
@@ -10765,7 +10765,7 @@
         ]
     },
     {
-        "name": "Block-d",
+        "name": "Block-D",
         "md5": "aee2d71ef0293b33479bff9423d16b67.svg",
         "type": "costume",
         "tags": [
@@ -10779,7 +10779,7 @@
         ]
     },
     {
-        "name": "Block-e",
+        "name": "Block-E",
         "md5": "16c6257316ff94cc7539ccdfc24e5fb8.svg",
         "type": "costume",
         "tags": [
@@ -10793,7 +10793,7 @@
         ]
     },
     {
-        "name": "Block-f",
+        "name": "Block-F",
         "md5": "34c090c1f573c569332ead68cb99b595.svg",
         "type": "costume",
         "tags": [
@@ -10807,7 +10807,7 @@
         ]
     },
     {
-        "name": "Block-g",
+        "name": "Block-G",
         "md5": "8bb2382627004eb08ff10ea8171cc724.svg",
         "type": "costume",
         "tags": [
@@ -10821,7 +10821,7 @@
         ]
     },
     {
-        "name": "Block-h",
+        "name": "Block-H",
         "md5": "f1578807d4a124fc02b639a8febeaab3.svg",
         "type": "costume",
         "tags": [
@@ -10835,7 +10835,7 @@
         ]
     },
     {
-        "name": "Block-i",
+        "name": "Block-I",
         "md5": "341bc70442886d6fdf959f2a97a63554.svg",
         "type": "costume",
         "tags": [
@@ -10849,7 +10849,7 @@
         ]
     },
     {
-        "name": "Block-j",
+        "name": "Block-J",
         "md5": "4b420cce964beedf2c1dc43faa59fdec.svg",
         "type": "costume",
         "tags": [
@@ -10863,7 +10863,7 @@
         ]
     },
     {
-        "name": "Block-k",
+        "name": "Block-K",
         "md5": "19601cc33449813aa93a47c63167e5c1.svg",
         "type": "costume",
         "tags": [
@@ -10877,7 +10877,7 @@
         ]
     },
     {
-        "name": "Block-l",
+        "name": "Block-L",
         "md5": "87358e3c9b9f5be4376253ce08d0192d.svg",
         "type": "costume",
         "tags": [
@@ -10891,7 +10891,7 @@
         ]
     },
     {
-        "name": "Block-m",
+        "name": "Block-M",
         "md5": "7ba0642be1f0080c0d273ea96e29b1e8.svg",
         "type": "costume",
         "tags": [
@@ -10905,7 +10905,7 @@
         ]
     },
     {
-        "name": "Block-n",
+        "name": "Block-N",
         "md5": "6c1fbc57821744bd9356ce9a21ed70f7.svg",
         "type": "costume",
         "tags": [
@@ -10919,7 +10919,7 @@
         ]
     },
     {
-        "name": "Block-o",
+        "name": "Block-O",
         "md5": "e88638200a73e167d0e266a343019cec.svg",
         "type": "costume",
         "tags": [
@@ -10933,7 +10933,7 @@
         ]
     },
     {
-        "name": "Block-p",
+        "name": "Block-P",
         "md5": "ad2fc3a1c6538678915633a11ab6ec73.svg",
         "type": "costume",
         "tags": [
@@ -10947,7 +10947,7 @@
         ]
     },
     {
-        "name": "Block-q",
+        "name": "Block-Q",
         "md5": "64da9da8684c74deb567dbdb661d3a52.svg",
         "type": "costume",
         "tags": [
@@ -10961,7 +10961,7 @@
         ]
     },
     {
-        "name": "Block-r",
+        "name": "Block-R",
         "md5": "73e8d46f7475476d8cb4cfcfc75ee50d.svg",
         "type": "costume",
         "tags": [
@@ -10975,7 +10975,7 @@
         ]
     },
     {
-        "name": "Block-s",
+        "name": "Block-S",
         "md5": "9feb5593fed51e88dbb3128cfc290d29.svg",
         "type": "costume",
         "tags": [
@@ -10989,7 +10989,7 @@
         ]
     },
     {
-        "name": "Block-t",
+        "name": "Block-T",
         "md5": "d29c1caf5cf195740c38f279e82a77a4.svg",
         "type": "costume",
         "tags": [
@@ -11003,7 +11003,7 @@
         ]
     },
     {
-        "name": "Block-u",
+        "name": "Block-U",
         "md5": "faef46b7bf589c36300142f6f03c5d32.svg",
         "type": "costume",
         "tags": [
@@ -11017,7 +11017,7 @@
         ]
     },
     {
-        "name": "Block-v",
+        "name": "Block-V",
         "md5": "65e2f4821ab084827e22920acb61c92b.svg",
         "type": "costume",
         "tags": [
@@ -11031,7 +11031,7 @@
         ]
     },
     {
-        "name": "Block-w",
+        "name": "Block-W",
         "md5": "5ab197b4f70b2f98a3658c7ccdc3351d.svg",
         "type": "costume",
         "tags": [
@@ -11045,7 +11045,7 @@
         ]
     },
     {
-        "name": "Block-x",
+        "name": "Block-X",
         "md5": "cb9dff35f05e823d954e47e4a717a48c.svg",
         "type": "costume",
         "tags": [
@@ -11059,7 +11059,7 @@
         ]
     },
     {
-        "name": "Block-y",
+        "name": "Block-Y",
         "md5": "4c13c440bcb35c8c3aa6226374fced3f.svg",
         "type": "costume",
         "tags": [
@@ -11073,7 +11073,7 @@
         ]
     },
     {
-        "name": "Block-z",
+        "name": "Block-Z",
         "md5": "0ccff1898f1bf1b25333d581db09fae2.svg",
         "type": "costume",
         "tags": [
@@ -11591,7 +11591,7 @@
         ]
     },
     {
-        "name": "story-A-1",
+        "name": "Story-A-1",
         "md5": "5406b37278d819d4787a588b9c91f68e.svg",
         "type": "costume",
         "tags": [
@@ -11605,7 +11605,7 @@
         ]
     },
     {
-        "name": "story-A-2",
+        "name": "Story-A-2",
         "md5": "f277943adf8d79b41b9b568321a786ee.svg",
         "type": "costume",
         "tags": [
@@ -11619,7 +11619,7 @@
         ]
     },
     {
-        "name": "story-A-3",
+        "name": "Story-A-3",
         "md5": "cc0cc7ae3240eab7d040e148cc663325.svg",
         "type": "costume",
         "tags": [
@@ -11633,7 +11633,7 @@
         ]
     },
     {
-        "name": "story-B-1",
+        "name": "Story-B-1",
         "md5": "2a8fac3c82d95f13203843a597b5757b.svg",
         "type": "costume",
         "tags": [
@@ -11647,7 +11647,7 @@
         ]
     },
     {
-        "name": "story-B-2",
+        "name": "Story-B-2",
         "md5": "07fa4ebc421d84743b6ced189dd2f9cf.svg",
         "type": "costume",
         "tags": [
@@ -11661,7 +11661,7 @@
         ]
     },
     {
-        "name": "story-B-3",
+        "name": "Story-B-3",
         "md5": "6c9a9203155f93f24f31b30e3bd76b6d.svg",
         "type": "costume",
         "tags": [
@@ -11675,7 +11675,7 @@
         ]
     },
     {
-        "name": "story-C-1",
+        "name": "Story-C-1",
         "md5": "144845715016910e88e2a223ed4d3df1.svg",
         "type": "costume",
         "tags": [
@@ -11689,7 +11689,7 @@
         ]
     },
     {
-        "name": "story-C-2",
+        "name": "Story-C-2",
         "md5": "1045c56c4be3d8d0650579864417fbc7.svg",
         "type": "costume",
         "tags": [
@@ -11703,7 +11703,7 @@
         ]
     },
     {
-        "name": "story-C-3",
+        "name": "Story-C-3",
         "md5": "c8fd35294d17a369fecb6d6e4725d04a.svg",
         "type": "costume",
         "tags": [
@@ -11717,7 +11717,7 @@
         ]
     },
     {
-        "name": "story-D-1",
+        "name": "Story-D-1",
         "md5": "dfd362f2da975c20aa7849a8fa2fb4df.svg",
         "type": "costume",
         "tags": [
@@ -11731,7 +11731,7 @@
         ]
     },
     {
-        "name": "story-D-2",
+        "name": "Story-D-2",
         "md5": "3e4cc4cff08bb42bc690eff66dffbbe9.svg",
         "type": "costume",
         "tags": [
@@ -11745,7 +11745,7 @@
         ]
     },
     {
-        "name": "story-D-3",
+        "name": "Story-D-3",
         "md5": "bd7f984fe82d9d0fdcff0a87b3c0f9e0.svg",
         "type": "costume",
         "tags": [
@@ -11759,7 +11759,7 @@
         ]
     },
     {
-        "name": "story-E-1",
+        "name": "Story-E-1",
         "md5": "56473bacbdf6f0dbca1afb04e5aebaf7.svg",
         "type": "costume",
         "tags": [
@@ -11773,7 +11773,7 @@
         ]
     },
     {
-        "name": "story-E-2",
+        "name": "Story-E-2",
         "md5": "8bba14966fe35f0dccb66ef06a9843ca.svg",
         "type": "costume",
         "tags": [
@@ -11787,7 +11787,7 @@
         ]
     },
     {
-        "name": "story-E-3",
+        "name": "Story-E-3",
         "md5": "e8cfc63375f6d6c2a580823489427f38.svg",
         "type": "costume",
         "tags": [
@@ -11801,7 +11801,7 @@
         ]
     },
     {
-        "name": "story-F-1",
+        "name": "Story-F-1",
         "md5": "5844ff29fc8663c8613f12169d2f07ef.svg",
         "type": "costume",
         "tags": [
@@ -11815,7 +11815,7 @@
         ]
     },
     {
-        "name": "story-F-2",
+        "name": "Story-F-2",
         "md5": "0dbe4a064abea1a9a3bc0d2732643e6b.svg",
         "type": "costume",
         "tags": [
@@ -11829,7 +11829,7 @@
         ]
     },
     {
-        "name": "story-F-3",
+        "name": "Story-F-3",
         "md5": "3db373f4482e391e66d1b06335a96144.svg",
         "type": "costume",
         "tags": [
@@ -11843,7 +11843,7 @@
         ]
     },
     {
-        "name": "story-G-1",
+        "name": "Story-G-1",
         "md5": "ee6454d15fbbe93e908a2ebbfad483a0.svg",
         "type": "costume",
         "tags": [
@@ -11857,7 +11857,7 @@
         ]
     },
     {
-        "name": "story-G-2",
+        "name": "Story-G-2",
         "md5": "991023d303f79ce092f070392ffbd69f.svg",
         "type": "costume",
         "tags": [
@@ -11871,7 +11871,7 @@
         ]
     },
     {
-        "name": "story-G-3",
+        "name": "Story-G-3",
         "md5": "38f22c0d8dbe541bde409ba1f241d4c1.svg",
         "type": "costume",
         "tags": [
@@ -11885,7 +11885,7 @@
         ]
     },
     {
-        "name": "story-H-1",
+        "name": "Story-H-1",
         "md5": "2a0e1308d6cb806818af696a89b21863.svg",
         "type": "costume",
         "tags": [
@@ -11899,7 +11899,7 @@
         ]
     },
     {
-        "name": "story-H-2",
+        "name": "Story-H-2",
         "md5": "ca33be5270308a695c9b88af73f590dc.svg",
         "type": "costume",
         "tags": [
@@ -11913,7 +11913,7 @@
         ]
     },
     {
-        "name": "story-H-3",
+        "name": "Story-H-3",
         "md5": "668ba2b891f82ce78d8590f0287632b1.svg",
         "type": "costume",
         "tags": [
@@ -11927,7 +11927,7 @@
         ]
     },
     {
-        "name": "story-I-1",
+        "name": "Story-I-1",
         "md5": "705297637ea83af5b94b6fe2e34aeef4.svg",
         "type": "costume",
         "tags": [
@@ -11941,7 +11941,7 @@
         ]
     },
     {
-        "name": "story-I-2",
+        "name": "Story-I-2",
         "md5": "7b3ae96764795727fa1cb0be68a9ca5e.svg",
         "type": "costume",
         "tags": [
@@ -11955,7 +11955,7 @@
         ]
     },
     {
-        "name": "story-I-3",
+        "name": "Story-I-3",
         "md5": "3475aa570304accb7e6dbd2516234135.svg",
         "type": "costume",
         "tags": [
@@ -11969,7 +11969,7 @@
         ]
     },
     {
-        "name": "story-J-1",
+        "name": "Story-J-1",
         "md5": "ac2e7eaecb80c5501e5e56802d03af00.svg",
         "type": "costume",
         "tags": [
@@ -11983,7 +11983,7 @@
         ]
     },
     {
-        "name": "story-J-2",
+        "name": "Story-J-2",
         "md5": "0ab9a94fc2e32160efc113a8e5ffb984.svg",
         "type": "costume",
         "tags": [
@@ -11997,7 +11997,7 @@
         ]
     },
     {
-        "name": "story-J-3",
+        "name": "Story-J-3",
         "md5": "c9356a022cfbc25be6c484e9781e4637.svg",
         "type": "costume",
         "tags": [
@@ -12011,7 +12011,7 @@
         ]
     },
     {
-        "name": "story-K-1",
+        "name": "Story-K-1",
         "md5": "62dcc92dc3c6cb0271244190320c4f71.svg",
         "type": "costume",
         "tags": [
@@ -12025,7 +12025,7 @@
         ]
     },
     {
-        "name": "story-K-2",
+        "name": "Story-K-2",
         "md5": "ef02339e8a0382367f0b5a414915b885.svg",
         "type": "costume",
         "tags": [
@@ -12039,7 +12039,7 @@
         ]
     },
     {
-        "name": "story-K-3",
+        "name": "Story-K-3",
         "md5": "07977708617d12381b22d1ee0f4926a3.svg",
         "type": "costume",
         "tags": [
@@ -12053,7 +12053,7 @@
         ]
     },
     {
-        "name": "story-L-1",
+        "name": "Story-L-1",
         "md5": "7ce306e9c9c0dd0a24279606301f1d05.svg",
         "type": "costume",
         "tags": [
@@ -12067,7 +12067,7 @@
         ]
     },
     {
-        "name": "story-L-2",
+        "name": "Story-L-2",
         "md5": "067c21a9b2f91ed33e07131ce5a59210.svg",
         "type": "costume",
         "tags": [
@@ -12081,7 +12081,7 @@
         ]
     },
     {
-        "name": "story-L-3",
+        "name": "Story-L-3",
         "md5": "488d66f17c0089a7796d44cfc70792e8.svg",
         "type": "costume",
         "tags": [
@@ -12095,7 +12095,7 @@
         ]
     },
     {
-        "name": "story-M-1",
+        "name": "Story-M-1",
         "md5": "b27f166f9ab4a3fb93a50a77c58c3df3.svg",
         "type": "costume",
         "tags": [
@@ -12109,7 +12109,7 @@
         ]
     },
     {
-        "name": "story-M-2",
+        "name": "Story-M-2",
         "md5": "55f00a23d0f5cc57be9533f126a7ac8c.svg",
         "type": "costume",
         "tags": [
@@ -12123,7 +12123,7 @@
         ]
     },
     {
-        "name": "story-M-3",
+        "name": "Story-M-3",
         "md5": "613df2bd97784a239ab992f7a95458a0.svg",
         "type": "costume",
         "tags": [
@@ -12137,7 +12137,7 @@
         ]
     },
     {
-        "name": "story-N-1",
+        "name": "Story-N-1",
         "md5": "293589fd5bbc358a20c165ab49c19833.svg",
         "type": "costume",
         "tags": [
@@ -12151,7 +12151,7 @@
         ]
     },
     {
-        "name": "story-N-2",
+        "name": "Story-N-2",
         "md5": "5e07ee61cb20bc575720774584dfec53.svg",
         "type": "costume",
         "tags": [
@@ -12165,7 +12165,7 @@
         ]
     },
     {
-        "name": "story-N-3",
+        "name": "Story-N-3",
         "md5": "435697335345f946d943c1d89fdb459a.svg",
         "type": "costume",
         "tags": [
@@ -12179,7 +12179,7 @@
         ]
     },
     {
-        "name": "story-O-1",
+        "name": "Story-O-1",
         "md5": "088beed7ce0dff554da06f54d0558bc0.svg",
         "type": "costume",
         "tags": [
@@ -12193,7 +12193,7 @@
         ]
     },
     {
-        "name": "story-O-2",
+        "name": "Story-O-2",
         "md5": "e8fa671bb1ca53c044bfb27225321c25.svg",
         "type": "costume",
         "tags": [
@@ -12207,7 +12207,7 @@
         ]
     },
     {
-        "name": "story-O-3",
+        "name": "Story-O-3",
         "md5": "a132bf3d4084ef8ca9e0797f64c0f082.svg",
         "type": "costume",
         "tags": [
@@ -12221,7 +12221,7 @@
         ]
     },
     {
-        "name": "story-P-1",
+        "name": "Story-P-1",
         "md5": "ad4a101b83f28ced16849be3e393caa9.svg",
         "type": "costume",
         "tags": [
@@ -12235,7 +12235,7 @@
         ]
     },
     {
-        "name": "story-P-2",
+        "name": "Story-P-2",
         "md5": "781c42f9da36bbc0ee3775f18ac98124.svg",
         "type": "costume",
         "tags": [
@@ -12249,7 +12249,7 @@
         ]
     },
     {
-        "name": "story-P-3",
+        "name": "Story-P-3",
         "md5": "bcaec7c778920d8d74c275c1aff634fe.svg",
         "type": "costume",
         "tags": [
@@ -12263,7 +12263,7 @@
         ]
     },
     {
-        "name": "story-Q-1",
+        "name": "Story-Q-1",
         "md5": "484e44f908e84d795c87cf994364e722.svg",
         "type": "costume",
         "tags": [
@@ -12277,7 +12277,7 @@
         ]
     },
     {
-        "name": "story-Q-2",
+        "name": "Story-Q-2",
         "md5": "31f28be74dc7de42a5c4a38504d666ca.svg",
         "type": "costume",
         "tags": [
@@ -12291,7 +12291,7 @@
         ]
     },
     {
-        "name": "story-Q-3",
+        "name": "Story-Q-3",
         "md5": "aef19097378515308e934a79f147032e.svg",
         "type": "costume",
         "tags": [
@@ -12305,7 +12305,7 @@
         ]
     },
     {
-        "name": "story-R-1",
+        "name": "Story-R-1",
         "md5": "55999cb6783ef8351d841294d75af942.svg",
         "type": "costume",
         "tags": [
@@ -12319,7 +12319,7 @@
         ]
     },
     {
-        "name": "story-R-2",
+        "name": "Story-R-2",
         "md5": "926f8ff770cb15b42b12f209fd02d98c.svg",
         "type": "costume",
         "tags": [
@@ -12333,7 +12333,7 @@
         ]
     },
     {
-        "name": "story-R-3",
+        "name": "Story-R-3",
         "md5": "a66d8f0ba6d40c624873edc8df58c014.svg",
         "type": "costume",
         "tags": [
@@ -12347,7 +12347,7 @@
         ]
     },
     {
-        "name": "story-S-1",
+        "name": "Story-S-1",
         "md5": "fca1555f335392f1c4ef620bf098c0de.svg",
         "type": "costume",
         "tags": [
@@ -12361,7 +12361,7 @@
         ]
     },
     {
-        "name": "story-S-2",
+        "name": "Story-S-2",
         "md5": "c529ed7b40f4a949539f8f454e3fe475.svg",
         "type": "costume",
         "tags": [
@@ -12375,7 +12375,7 @@
         ]
     },
     {
-        "name": "story-S-3",
+        "name": "Story-S-3",
         "md5": "e96388c9197733bdadbad3ce014c0e59.svg",
         "type": "costume",
         "tags": [
@@ -12389,7 +12389,7 @@
         ]
     },
     {
-        "name": "story-T-1",
+        "name": "Story-T-1",
         "md5": "d3b342c795a620b69639c02a419e8535.svg",
         "type": "costume",
         "tags": [
@@ -12403,7 +12403,7 @@
         ]
     },
     {
-        "name": "story-T-2",
+        "name": "Story-T-2",
         "md5": "eeb0fd25c9273747ac38766d1959ba2b.svg",
         "type": "costume",
         "tags": [
@@ -12417,7 +12417,7 @@
         ]
     },
     {
-        "name": "story-T-3",
+        "name": "Story-T-3",
         "md5": "a9683d4946b08a76864a51bd21d811cb.svg",
         "type": "costume",
         "tags": [
@@ -12431,7 +12431,7 @@
         ]
     },
     {
-        "name": "story-U-1",
+        "name": "Story-U-1",
         "md5": "fcf99b6e8aeb2d504e1e9b2194640916.svg",
         "type": "costume",
         "tags": [
@@ -12445,7 +12445,7 @@
         ]
     },
     {
-        "name": "story-U-2",
+        "name": "Story-U-2",
         "md5": "f442802f17225d6506ac9718810f179e.svg",
         "type": "costume",
         "tags": [
@@ -12459,7 +12459,7 @@
         ]
     },
     {
-        "name": "story-U-3",
+        "name": "Story-U-3",
         "md5": "0779f03a6589c60352b1d4806a4a61c0.svg",
         "type": "costume",
         "tags": [
@@ -12473,7 +12473,7 @@
         ]
     },
     {
-        "name": "story-V-1",
+        "name": "Story-V-1",
         "md5": "750b47f1de2143f76354239b27e1e5f0.svg",
         "type": "costume",
         "tags": [
@@ -12487,7 +12487,7 @@
         ]
     },
     {
-        "name": "story-V-2",
+        "name": "Story-V-2",
         "md5": "03de7add77e31799ca568a9c671012b4.svg",
         "type": "costume",
         "tags": [
@@ -12501,7 +12501,7 @@
         ]
     },
     {
-        "name": "story-V-3",
+        "name": "Story-V-3",
         "md5": "29befe20b105b69471f5507d025ec3e0.svg",
         "type": "costume",
         "tags": [
@@ -12515,7 +12515,7 @@
         ]
     },
     {
-        "name": "story-W-1",
+        "name": "Story-W-1",
         "md5": "7d9d4c0da9bd1a3ddf253d1bea26f4e9.svg",
         "type": "costume",
         "tags": [
@@ -12529,7 +12529,7 @@
         ]
     },
     {
-        "name": "story-W-2",
+        "name": "Story-W-2",
         "md5": "c0f48eb69cae4a611d3e7b7e06b0d1c1.svg",
         "type": "costume",
         "tags": [
@@ -12543,7 +12543,7 @@
         ]
     },
     {
-        "name": "story-W-3",
+        "name": "Story-W-3",
         "md5": "d1c922c9e9d53d2f6f36ca637e85de6b.svg",
         "type": "costume",
         "tags": [
@@ -12557,7 +12557,7 @@
         ]
     },
     {
-        "name": "story-X-1",
+        "name": "Story-X-1",
         "md5": "92c452555b3d5a4993f107810043ea03.svg",
         "type": "costume",
         "tags": [
@@ -12571,7 +12571,7 @@
         ]
     },
     {
-        "name": "story-X-2",
+        "name": "Story-X-2",
         "md5": "f688425da41c2b7f80d4b8752de69bc9.svg",
         "type": "costume",
         "tags": [
@@ -12585,7 +12585,7 @@
         ]
     },
     {
-        "name": "story-X-3",
+        "name": "Story-X-3",
         "md5": "ec90479a0ce3c7706f1916daef0f3c67.svg",
         "type": "costume",
         "tags": [
@@ -12599,7 +12599,7 @@
         ]
     },
     {
-        "name": "story-Y-1",
+        "name": "Story-Y-1",
         "md5": "b3c252450d413fc75be0eafdbe4490dc.svg",
         "type": "costume",
         "tags": [
@@ -12613,7 +12613,7 @@
         ]
     },
     {
-        "name": "story-Y-2",
+        "name": "Story-Y-2",
         "md5": "1cfa161ae5d60ea163e4e0aa34d08f02.svg",
         "type": "costume",
         "tags": [
@@ -12627,7 +12627,7 @@
         ]
     },
     {
-        "name": "story-Y-3",
+        "name": "Story-Y-3",
         "md5": "a1fc3c0fa304255364c0f98547e0e448.svg",
         "type": "costume",
         "tags": [
@@ -12641,7 +12641,7 @@
         ]
     },
     {
-        "name": "story-Z-1",
+        "name": "Story-Z-1",
         "md5": "86326c9180c485b557a075f4794939d7.svg",
         "type": "costume",
         "tags": [
@@ -12655,7 +12655,7 @@
         ]
     },
     {
-        "name": "story-Z-2",
+        "name": "Story-Z-2",
         "md5": "e10b203e47bbb41edab78be59e628449.svg",
         "type": "costume",
         "tags": [
@@ -12669,7 +12669,7 @@
         ]
     },
     {
-        "name": "story-Z-3",
+        "name": "Story-Z-3",
         "md5": "0788df7b1d9cf02dfdebc021d4f30ce4.svg",
         "type": "costume",
         "tags": [
