@@ -45,6 +45,8 @@ class StageHeader extends React.Component {
 StageHeader.propTypes = {
     isFullScreen: PropTypes.bool,
     isPlayerOnly: PropTypes.bool,
+    mouseX: PropTypes.number,
+    mouseY: PropTypes.number,
     onSetStageUnFull: PropTypes.func.isRequired,
     showBranding: PropTypes.bool,
     stageSizeMode: PropTypes.oneOf(Object.keys(STAGE_SIZE_MODES)),

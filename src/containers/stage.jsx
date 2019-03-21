@@ -214,6 +214,7 @@ class Stage extends React.Component {
             canvasHeight: this.rect.height
         };
         this.props.vm.postIOData('mouse', coordinates);
+        this.props.onMouseMove(this.getScratchCoords(mousePosition[0], mousePosition[1]));
     }
     onMouseUp (e) {
         const {x, y} = getEventXY(e);
@@ -426,6 +427,7 @@ Stage.propTypes = {
     micIndicator: PropTypes.bool,
     onActivateColorPicker: PropTypes.func,
     onDeactivateColorPicker: PropTypes.func,
+    onMouseMove: PropTypes.func,
     stageSize: PropTypes.oneOf(Object.keys(STAGE_DISPLAY_SIZES)).isRequired,
     useEditorDragStyle: PropTypes.bool,
     vm: PropTypes.instanceOf(VM).isRequired

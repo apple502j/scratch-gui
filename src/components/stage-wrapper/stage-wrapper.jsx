@@ -16,6 +16,9 @@ const StageWrapperComponent = function (props) {
         isRtl,
         isRendererSupported,
         loading,
+        mouseX,
+        mouseY,
+        onMouseMove,
         stageSize,
         vm
     } = props;
@@ -27,6 +30,8 @@ const StageWrapperComponent = function (props) {
         >
             <Box className={styles.stageMenuWrapper}>
                 <StageHeader
+                    mouseX={mouseX}
+                    mouseY={mouseY}
                     stageSize={stageSize}
                     vm={vm}
                 />
@@ -37,6 +42,7 @@ const StageWrapperComponent = function (props) {
                         <Stage
                             stageSize={stageSize}
                             vm={vm}
+                            onMouseMove={onMouseMove}
                         /> :
                         null
                 }
@@ -53,6 +59,9 @@ StageWrapperComponent.propTypes = {
     isRendererSupported: PropTypes.bool.isRequired,
     isRtl: PropTypes.bool.isRequired,
     loading: PropTypes.bool,
+    mouseX: PropTypes.number.isRequired,
+    mouseY: PropTypes.number.isRequired,
+    onMouseMove: PropTypes.func,
     stageSize: PropTypes.oneOf(Object.keys(STAGE_DISPLAY_SIZES)).isRequired,
     vm: PropTypes.instanceOf(VM).isRequired
 };

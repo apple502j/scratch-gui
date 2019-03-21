@@ -94,3 +94,13 @@
 .stage-button-toggled-off {
     filter: saturate(0);
 }
+
+.mouse-position {
+    color: $text-primary;
+    padding: 0.5rem;
+}
+
+.mouse-position-x, .mouse-position-y {
+    width: 3.5rem;
+    display: inline-block;
+}
