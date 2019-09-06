@@ -3,6 +3,7 @@ import {FormattedMessage} from 'react-intl';
 import keyMirror from 'keymirror';
 
 import successImage from '../assets/icon--success.svg';
+import warningImage from '../assets/icon--warning.svg';
 
 const AlertTypes = keyMirror({
     STANDARD: null,
@@ -212,6 +213,22 @@ const alerts = [
         ),
         iconSpinner: true,
         level: AlertLevels.SUCCESS
+    },
+    {
+        alertId: 'deleteSprite',
+        alertType: AlertTypes.STANDARD,
+        clearList: [],
+        closeButton: true,
+        content: (
+            <FormattedMessage
+                defaultMessage="Sprite is deleted. You can undo from Edit menu."
+                description="Message indicating that a sprite is deleted."
+                id="gui.alerts.deletesprite"
+            />
+        ),
+        iconURL: warningImage,
+        level: AlertLevels.WARN,
+        maxDisplaySecs: 5
     }
 ];
 

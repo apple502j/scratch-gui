@@ -84,7 +84,7 @@ class TargetPane extends React.Component {
             restoreFun: restoreFun,
             deletedItem: 'Sprite'
         });
-
+        this.props.onShowDeleteAlert();
     }
     handleDuplicateSprite (id) {
         this.props.vm.duplicateSprite(id);
@@ -247,6 +247,7 @@ const {
 TargetPane.propTypes = {
     intl: intlShape.isRequired,
     onCloseImporting: PropTypes.func,
+    onShowDeleteAlert: PropTypes.func,
     onShowImporting: PropTypes.func,
     ...targetPaneProps
 };
@@ -281,6 +282,7 @@ const mapDispatchToProps = dispatch => ({
         dispatch(highlightTarget(id));
     },
     onCloseImporting: () => dispatch(closeAlertWithId('importingAsset')),
+    onShowDeleteAlert: () => dispatch(showStandardAlert('deleteSprite')),
     onShowImporting: () => dispatch(showStandardAlert('importingAsset'))
 });
 
