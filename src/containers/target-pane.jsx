@@ -10,7 +10,7 @@ import {
 } from '../reducers/modals';
 import {activateTab, COSTUMES_TAB_INDEX, BLOCKS_TAB_INDEX} from '../reducers/editor-tab';
 import {setReceivedBlocks} from '../reducers/hovered-target';
-import {showStandardAlert, closeAlertWithId} from '../reducers/alerts';
+import {showStandardAlert, closeAlertWithId, showAlertWithTimeout} from '../reducers/alerts';
 import {setRestore} from '../reducers/restore-deletion';
 import DragConstants from '../lib/drag-constants';
 import TargetPaneComponent from '../components/target-pane/target-pane.jsx';
@@ -210,6 +210,7 @@ class TargetPane extends React.Component {
             dispatchUpdateRestore, // eslint-disable-line no-unused-vars
             onShowImporting, // eslint-disable-line no-unused-vars
             onCloseImporting, // eslint-disable-line no-unused-vars
+            onShowDeleteAlert, // eslint-disable-line no-unused-vars
             ...componentProps
         } = this.props;
         return (
@@ -282,7 +283,7 @@ const mapDispatchToProps = dispatch => ({
         dispatch(highlightTarget(id));
     },
     onCloseImporting: () => dispatch(closeAlertWithId('importingAsset')),
-    onShowDeleteAlert: () => dispatch(showStandardAlert('deleteSprite')),
+    onShowDeleteAlert: () => showAlertWithTimeout(dispatch, 'deleteSprite'),
     onShowImporting: () => dispatch(showStandardAlert('importingAsset'))
 });
 

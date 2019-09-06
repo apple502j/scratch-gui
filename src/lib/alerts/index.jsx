@@ -221,14 +221,15 @@ const alerts = [
         closeButton: true,
         content: (
             <FormattedMessage
-                defaultMessage="Sprite is deleted. You can undo from Edit menu."
+                defaultMessage="Sprite is deleted."
                 description="Message indicating that a sprite is deleted."
                 id="gui.alerts.deletesprite"
             />
         ),
         iconURL: warningImage,
         level: AlertLevels.WARN,
-        maxDisplaySecs: 5
+        maxDisplaySecs: 15,
+        showUndo: true
     }
 ];
 

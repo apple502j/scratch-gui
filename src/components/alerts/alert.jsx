@@ -6,6 +6,7 @@ import {FormattedMessage} from 'react-intl';
 import Box from '../box/box.jsx';
 import CloseButton from '../close-button/close-button.jsx';
 import Spinner from '../spinner/spinner.jsx';
+import DeletionRestorer from '../../containers/deletion-restorer.jsx';
 import {AlertLevels} from '../../lib/alerts/index.jsx';
 
 import styles from './alert.css';
@@ -24,6 +25,7 @@ const AlertComponent = ({
     level,
     showDownload,
     showSaveNow,
+    showUndo,
     onCloseAlert,
     onDownload,
     onSaveNow,
@@ -101,6 +103,31 @@ const AlertComponent = ({
                     />
                 </button>
             )}
+            {showUndo && (
+                <DeletionRestorer>{(handleRestore, {restorable, deletedItem}) => {
+                    const spriteRestorable = restorable && deletedItem === 'Sprite';
+                    return (
+                        <button
+                            className={classNames({
+                                [styles.alertConnectionButton]: true,
+                                [styles.disabled]: !spriteRestorable
+                            })}
+                            onClick={() => { // eslint-disable-line react/jsx-no-bind
+                                if (spriteRestorable) {
+                                    handleRestore();
+                                    onCloseAlert();
+                                }
+                            }}
+                        >
+                            <FormattedMessage
+                                defaultMessage="Undo"
+                                description="Button to undo the deletion"
+                                id="gui.alerts.undo"
+                            />
+                        </button>
+                    );
+                }}</DeletionRestorer>
+            )}
             {closeButton && (
                 <Box
                     className={styles.alertCloseButtonContainer}
@@ -130,7 +157,8 @@ AlertComponent.propTypes = {
     onSaveNow: PropTypes.func,
     showDownload: PropTypes.func,
     showReconnect: PropTypes.bool,
-    showSaveNow: PropTypes.bool
+    showSaveNow: PropTypes.bool,
+    showUndo: PropTypes.bool
 };
 
 AlertComponent.defaultProps = {
