@@ -2,7 +2,7 @@ import bindAll from 'lodash.bindall';
 import React from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
-import {intlShape, injectIntl} from 'react-intl';
+import {defineMessages, intlShape, injectIntl} from 'react-intl';
 
 import {
     openSpriteLibrary,
@@ -22,6 +22,14 @@ import {highlightTarget} from '../reducers/targets';
 import {fetchSprite, fetchCode} from '../lib/backpack-api';
 import randomizeSpritePosition from '../lib/randomize-sprite-position';
 import downloadBlob from '../lib/download-blob';
+
+const messages = defineMessages({
+    deleteSprite: {
+        defaultMessage: 'You are about to delete a sprite with blocks! Are you sure?',
+        description: 'A confirm message for deleting sprite with blocks',
+        id: 'gui.targetPane.deleteSpriteConfirm'
+    }
+});
 
 class TargetPane extends React.Component {
     constructor (props) {
@@ -77,6 +85,13 @@ class TargetPane extends React.Component {
         this.props.vm.postSpriteInfo({y});
     }
     handleDeleteSprite (id) {
+        const target = this.props.vm.runtime.getTargetById(id);
+        if (target.blocks && target.blocks._blocks && Object.keys(target.blocks._blocks).length !== 0) {
+            const canDelete = confirm( // eslint-disable-line no-alert
+                this.props.intl.formatMessage(messages.deleteSprite)
+            );
+            if (!canDelete) return;
+        }
         const restoreSprite = this.props.vm.deleteSprite(id);
         const restoreFun = () => restoreSprite().then(this.handleActivateBlocksTab);
 
