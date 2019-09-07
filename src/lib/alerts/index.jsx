@@ -217,7 +217,7 @@ const alerts = [
     {
         alertId: 'deleteSprite',
         alertType: AlertTypes.STANDARD,
-        clearList: [],
+        clearList: ['deleteSprite'],
         closeButton: true,
         content: (
             <FormattedMessage
