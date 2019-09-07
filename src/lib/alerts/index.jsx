@@ -217,7 +217,7 @@ const alerts = [
     {
         alertId: 'deleteSprite',
         alertType: AlertTypes.STANDARD,
-        clearList: [],
+        clearList: ['deleteSprite'],
         closeButton: true,
         content: (
             <FormattedMessage
@@ -228,7 +228,7 @@ const alerts = [
         ),
         iconURL: warningImage,
         level: AlertLevels.WARN,
-        maxDisplaySecs: 5
+        maxDisplaySecs: 15
     }
 ];
 
