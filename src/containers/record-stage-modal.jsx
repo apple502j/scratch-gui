@@ -10,23 +10,21 @@ class RecordStageModal extends React.Component {
     constructor (props) {
         super(props);
         bindAll(this, [
-            'handleOk',
+            'handleRecord',
             'handleCancel',
             'handleChangeDuration',
-            'handleKeyPress',
-            'validates',
-            'shouldBeDiscrete'
+            'handleKeyPress'
         ]);
 
         this.state = {
-            duration: 60
+            duration: '60'
         };
     }
     handleKeyPress (event) {
         if (event.key === 'Enter') this.handleOk();
     }
     handleRecord () {
-        const duration = this.state.duration;
+        const duration = parseInt(this.state.duration, 10);
         this.props.onStartRecording(Math.min(60, Math.max(1, duration)));
         this.props.onClose();
     }
@@ -34,7 +32,7 @@ class RecordStageModal extends React.Component {
         this.props.onClose();
     }
     handleChangeDuration (e) {
-        this.setState({duration: e.target.value});
+        this.setState({duration: parseInt(e.target.value, 10) ? e.target.value : ''});
     }
     render () {
         return (
@@ -43,7 +41,7 @@ class RecordStageModal extends React.Component {
                 onCancel={this.handleCancel}
                 onChangeDuration={this.handleChangeDuration}
                 onKeyPress={this.handleKeyPress}
-                onRecord={this.handleRecord}
+                onStartRecording={this.handleRecord}
             />
         );
     }

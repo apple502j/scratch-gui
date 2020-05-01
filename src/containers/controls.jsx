@@ -81,9 +81,9 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-    onRecordStopClick: dispatch(stopRecording()),
-    onRecordPauseClick: dispatch(pauseRecording()),
-    onRecordResumeClick: dispatch(startRecording())
+    onRecordStopClick: () => dispatch(stopRecording()),
+    onRecordPauseClick: () => dispatch(pauseRecording()),
+    onRecordResumeClick: () => dispatch(startRecording())
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Controls);

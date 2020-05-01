@@ -88,7 +88,7 @@ RecordStageUnsupported.propTypes = {
 
 const mapStateToProps = () => ({});
 const mapDispatchToProps = dispatch => ({
-    onClose: dispatch(closeStageRecordModal())
+    onClose: () => dispatch(closeStageRecordModal())
 });
 
 export default injectIntl(connect(

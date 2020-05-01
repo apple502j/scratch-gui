@@ -9,6 +9,7 @@ import {STAGE_DISPLAY_SIZES} from '../lib/layout-constants';
 import {getEventXY} from '../lib/touch-utils';
 import VideoProvider from '../lib/video/video-provider';
 import downloadBlob from '../lib/download-blob';
+import log from '../lib/log';
 import Timer from '../lib/timer';
 import {SVGRenderer as V2SVGAdapter} from 'scratch-svg-renderer';
 import {BitmapAdapter as V2BitmapAdapter} from 'scratch-svg-renderer';
@@ -50,7 +51,8 @@ class Stage extends React.Component {
             'pauseRecording',
             'resumeRecording',
             'handleReceiveRecordData',
-            'saveRecordng'
+            'saveRecording',
+            'disposeListener'
         ]);
         this.state = {
             mouseDownTimeoutId: null,
@@ -86,6 +88,7 @@ class Stage extends React.Component {
         this.attachMouseEvents(this.canvas);
         this.updateRect();
         this.props.vm.runtime.addListener('QUESTION', this.questionListener);
+        this.props.vm.runtime.addListener('RUNTIME_DISPOSED', this.disposeListener);
     }
     shouldComponentUpdate (nextProps, nextState) {
         return this.props.stageSize !== nextProps.stageSize ||
@@ -125,9 +128,13 @@ class Stage extends React.Component {
         this.stopColorPickingLoop();
         this.props.onStopRecording(true);
         this.props.vm.runtime.removeListener('QUESTION', this.questionListener);
+        this.props.vm.runtime.removeListener('RUNTIME_DISPOSED', this.disposeListener);
     }
     questionListener (question) {
         this.setState({question: question});
+    }
+    disposeListener () {
+        this.props.onStopRecording(true);
     }
     handleQuestionAnswered (answer) {
         this.setState({question: null}, () => {
@@ -429,10 +436,13 @@ class Stage extends React.Component {
         this.recorder = new MediaRecorder(stream, {
             mimeType: 'video/webm'
         });
-        this.recordTimer = new Timer(() => this.onStopRecording(false), duration);
+        this.recordTimer = new Timer(() => this.props.onStopRecording(false), duration * 1000);
         this.receivedRecordData = [];
         this.recorder.ondataavailable = this.handleReceiveRecordData;
-        this.recorder.onerror = () => this.onStopRecording(true);
+        this.recorder.onerror = e => {
+            log.warn('Recorder error:', e.error);
+            this.onStopRecording(true);
+        };
         this.recorder.start(1000);
     }
     stopRecording (forceStop) {
@@ -445,7 +455,7 @@ class Stage extends React.Component {
             clearTimeout(this.recordTimer.timeoutId);
             this.recordTimer = null;
         } else if (this.recorder.state !== 'inactive') {
-            this.recorder.onstop = () => this.saveRecordng();
+            this.recorder.onstop = () => this.saveRecording();
             this.recorder.stop();
         }
     }

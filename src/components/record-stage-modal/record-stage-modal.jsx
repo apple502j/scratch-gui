@@ -42,10 +42,8 @@ const RecordStageModalComponent = props => (
             <Box>
                 <input
                     className={styles.duration}
-                    max="60"
-                    min="1"
                     name={props.intl.formatMessage(messages.duration)}
-                    type="number"
+                    type="text"
                     value={props.duration}
                     onChange={props.onChangeDuration}
                     onKeyPress={props.onKeyPress}
@@ -79,7 +77,7 @@ const RecordStageModalComponent = props => (
 
 RecordStageModalComponent.propTypes = {
     intl: intlShape,
-    duration: PropTypes.number,
+    duration: PropTypes.string,
     onCancel: PropTypes.func.isRequired,
     onChangeDuration: PropTypes.func.isRequired,
     onKeyPress: PropTypes.func.isRequired,
