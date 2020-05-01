@@ -30,7 +30,7 @@ import DeletionRestorer from '../../containers/deletion-restorer.jsx';
 import TurboMode from '../../containers/turbo-mode.jsx';
 import MenuBarHOC from '../../containers/menu-bar-hoc.jsx';
 
-import {openTipsLibrary} from '../../reducers/modals';
+import {openTipsLibrary, openStageRecordModal} from '../../reducers/modals';
 import {setPlayer} from '../../reducers/mode';
 import {
     autoUpdateProject,
@@ -470,6 +470,17 @@ class MenuBar extends React.Component {
                                         </MenuItem>
                                     )}</TurboMode>
                                 </MenuSection>
+                                {this.props.canRecordStage && (
+                                    <MenuSection>
+                                        <MenuItem onClick={this.props.onRecord}>
+                                            <FormattedMessage
+                                                defaultMessage="Record Stage"
+                                                description="Menu bar item for recording stage"
+                                                id="gui.menuBar.recordStage"
+                                            />
+                                        </MenuItem>
+                                    </MenuSection>
+                                )}
                             </MenuBarMenu>
                         </div>
                     </div>
@@ -705,6 +716,7 @@ MenuBar.propTypes = {
     canCreateNew: PropTypes.bool,
     canEditTitle: PropTypes.bool,
     canManageFiles: PropTypes.bool,
+    canRecordStage: PropTypes.bool,
     canRemix: PropTypes.bool,
     canSave: PropTypes.bool,
     canShare: PropTypes.bool,
@@ -736,6 +748,7 @@ MenuBar.propTypes = {
     onOpenRegistration: PropTypes.func,
     onOpenTipLibrary: PropTypes.func,
     onProjectTelemetryEvent: PropTypes.func,
+    onRecord: PropTypes.func,
     onRequestCloseAccount: PropTypes.func,
     onRequestCloseEdit: PropTypes.func,
     onRequestCloseFile: PropTypes.func,
@@ -764,6 +777,7 @@ const mapStateToProps = (state, ownProps) => {
     const user = state.session && state.session.session && state.session.session.user;
     return {
         accountMenuOpen: accountMenuOpen(state),
+        canRecordStage: !state.scratchGui.stageRecord.recording,
         fileMenuOpen: fileMenuOpen(state),
         editMenuOpen: editMenuOpen(state),
         isRtl: state.locales.isRtl,
@@ -798,7 +812,8 @@ const mapDispatchToProps = dispatch => ({
     onClickRemix: () => dispatch(remixProject()),
     onClickSave: () => dispatch(manualUpdateProject()),
     onClickSaveAsCopy: () => dispatch(saveProjectAsCopy()),
-    onSeeCommunity: () => dispatch(setPlayer(true))
+    onSeeCommunity: () => dispatch(setPlayer(true)),
+    onRecord: () => dispatch(openStageRecordModal())
 });
 
 export default compose(

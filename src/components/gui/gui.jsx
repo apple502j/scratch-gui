@@ -29,6 +29,8 @@ import Cards from '../../containers/cards.jsx';
 import Alerts from '../../containers/alerts.jsx';
 import DragLayer from '../../containers/drag-layer.jsx';
 import ConnectionModal from '../../containers/connection-modal.jsx';
+import RecordStageModal from '../../containers/record-stage-modal.jsx';
+import RecordStageUnsupported from '../../components/record-stage-unsupported/record-stage-unsupported.jsx';
 import TelemetryModal from '../telemetry-modal/telemetry-modal.jsx';
 
 import layout, {STAGE_SIZE_MODES} from '../../lib/layout-constants';
@@ -51,6 +53,8 @@ const messages = defineMessages({
 // Cache this value to only retrieve it once the first time.
 // Assume that it doesn't change for a session.
 let isRendererSupported = null;
+
+let isRecordStageSupported = null;
 
 const GUIComponent = props => {
     const {
@@ -108,6 +112,7 @@ const GUIComponent = props => {
         onTelemetryModalCancel,
         onTelemetryModalOptIn,
         onTelemetryModalOptOut,
+        recordStageModalVisible,
         showComingSoon,
         soundsTabVisible,
         stageSizeMode,
@@ -132,6 +137,11 @@ const GUIComponent = props => {
 
     if (isRendererSupported === null) {
         isRendererSupported = Renderer.isSupported();
+    }
+    if (isRecordStageSupported === null) {
+        isRecordStageSupported = !!(MediaRecorder &&
+            typeof MediaRecorder === 'function' &&
+            MediaRecorder.isTypeSupported('video/webm'));
     }
 
     return (<MediaQuery minWidth={layout.fullSizeMinWidth}>{isFullSize => {
@@ -173,6 +183,14 @@ const GUIComponent = props => {
                 {isRendererSupported ? null : (
                     <WebGlModal isRtl={isRtl} />
                 )}
+                {recordStageModalVisible ?
+                    (isRecordStageSupported ? (
+                        <RecordStageModal />
+                    ) : (
+                        <RecordStageUnsupported isRtl={isRtl} />
+                    )) :
+                    null
+                }
                 {tipsLibraryVisible ? (
                     <TipsLibrary />
                 ) : null}
@@ -404,6 +422,7 @@ GUIComponent.propTypes = {
     onTelemetryModalOptIn: PropTypes.func,
     onTelemetryModalOptOut: PropTypes.func,
     onToggleLoginOpen: PropTypes.func,
+    recordStageModalVisible: PropTypes.bool,
     renderLogin: PropTypes.func,
     showComingSoon: PropTypes.bool,
     soundsTabVisible: PropTypes.bool,

@@ -8,6 +8,8 @@ import {connect} from 'react-redux';
 import {STAGE_DISPLAY_SIZES} from '../lib/layout-constants';
 import {getEventXY} from '../lib/touch-utils';
 import VideoProvider from '../lib/video/video-provider';
+import downloadBlob from '../lib/download-blob';
+import Timer from '../lib/timer';
 import {SVGRenderer as V2SVGAdapter} from 'scratch-svg-renderer';
 import {BitmapAdapter as V2BitmapAdapter} from 'scratch-svg-renderer';
 
@@ -17,6 +19,7 @@ import {
     activateColorPicker,
     deactivateColorPicker
 } from '../reducers/color-picker';
+import {stopRecording} from '../reducers/stage-record';
 
 const colorPickerRadius = 20;
 const dragThreshold = 3; // Same as the block drag threshold
@@ -41,7 +44,13 @@ class Stage extends React.Component {
             'setDragCanvas',
             'clearDragCanvas',
             'drawDragCanvas',
-            'positionDragCanvas'
+            'positionDragCanvas',
+            'startRecording',
+            'stopRecording',
+            'pauseRecording',
+            'resumeRecording',
+            'handleReceiveRecordData',
+            'saveRecordng'
         ]);
         this.state = {
             mouseDownTimeoutId: null,
@@ -85,13 +94,27 @@ class Stage extends React.Component {
             this.props.isFullScreen !== nextProps.isFullScreen ||
             this.state.question !== nextState.question ||
             this.props.micIndicator !== nextProps.micIndicator ||
-            this.props.isStarted !== nextProps.isStarted;
+            this.props.isStarted !== nextProps.isStarted ||
+            this.props.recording !== nextProps.recording ||
+            this.props.recordingPaused !== nextProps.recordingPaused;
     }
     componentDidUpdate (prevProps) {
         if (this.props.isColorPicking && !prevProps.isColorPicking) {
             this.startColorPickingLoop();
         } else if (!this.props.isColorPicking && prevProps.isColorPicking) {
             this.stopColorPickingLoop();
+        }
+        if (this.props.recording && !prevProps.recording) {
+            this.startRecording(this.props.recordingDuration);
+        } else if (!this.props.recording && prevProps.recording && this.recorder) {
+            this.stopRecording(this.props.recordingForceStopped);
+        }
+        if (this.props.recording) {
+            if (this.props.recordingPaused && !prevProps.recordingPaused) {
+                this.pauseRecording();
+            } else if (!this.props.recordingPaused && prevProps.recordingPaused) {
+                this.resumeRecording();
+            }
         }
         this.updateRect();
         this.renderer.resize(this.rect.width, this.rect.height);
@@ -100,6 +123,7 @@ class Stage extends React.Component {
         this.detachMouseEvents(this.canvas);
         this.detachRectEvents();
         this.stopColorPickingLoop();
+        this.props.onStopRecording(true);
         this.props.vm.runtime.removeListener('QUESTION', this.questionListener);
     }
     questionListener (question) {
@@ -400,6 +424,50 @@ class Stage extends React.Component {
     setDragCanvas (canvas) {
         this.dragCanvas = canvas;
     }
+    startRecording (duration) {
+        const stream = this.canvas.captureStream();
+        this.recorder = new MediaRecorder(stream, {
+            mimeType: 'video/webm'
+        });
+        this.recordTimer = new Timer(() => this.onStopRecording(false), duration);
+        this.receivedRecordData = [];
+        this.recorder.ondataavailable = this.handleReceiveRecordData;
+        this.recorder.onerror = () => this.onStopRecording(true);
+        this.recorder.start(1000);
+    }
+    stopRecording (forceStop) {
+        if (forceStop) {
+            // We don't have time to stop recording successfully,
+            // or, the recording failed.
+            if (this.recorder.state !== 'inactive') this.recorder.stop();
+            this.recorder = null;
+            this.receivedRecordData = [];
+            clearTimeout(this.recordTimer.timeoutId);
+            this.recordTimer = null;
+        } else if (this.recorder.state !== 'inactive') {
+            this.recorder.onstop = () => this.saveRecordng();
+            this.recorder.stop();
+        }
+    }
+    pauseRecording () {
+        this.recorder.pause();
+        this.recordTimer.pauseTimer();
+    }
+    resumeRecording () {
+        this.recorder.resume();
+        this.recordTimer.resumeTimer();
+    }
+    handleReceiveRecordData (e) {
+        this.receivedRecordData.push(e.data);
+    }
+    saveRecording () {
+        const blob = new Blob(this.receivedRecordData, {type: 'video/webm'});
+        downloadBlob('stage.webm', blob);
+        this.recorder = null;
+        this.receivedRecordData = [];
+        clearTimeout(this.recordTimer.timeoutId);
+        this.recordTimer = null;
+    }
     render () {
         const {
             vm, // eslint-disable-line no-unused-vars
@@ -425,15 +493,21 @@ Stage.propTypes = {
     isFullScreen: PropTypes.bool.isRequired,
     isStarted: PropTypes.bool,
     micIndicator: PropTypes.bool,
+    recording: PropTypes.bool,
+    recordingPaused: PropTypes.bool,
+    recordingForceStopped: PropTypes.bool,
+    recordingDuration: PropTypes.number,
     onActivateColorPicker: PropTypes.func,
     onDeactivateColorPicker: PropTypes.func,
+    onStopRecording: PropTypes.func,
     stageSize: PropTypes.oneOf(Object.keys(STAGE_DISPLAY_SIZES)).isRequired,
     useEditorDragStyle: PropTypes.bool,
     vm: PropTypes.instanceOf(VM).isRequired
 };
 
 Stage.defaultProps = {
-    useEditorDragStyle: true
+    useEditorDragStyle: true,
+    recording: false
 };
 
 const mapStateToProps = state => ({
@@ -442,12 +516,17 @@ const mapStateToProps = state => ({
     isStarted: state.scratchGui.vmStatus.started,
     micIndicator: state.scratchGui.micIndicator,
     // Do not use editor drag style in fullscreen or player mode.
-    useEditorDragStyle: !(state.scratchGui.mode.isFullScreen || state.scratchGui.mode.isPlayerOnly)
+    useEditorDragStyle: !(state.scratchGui.mode.isFullScreen || state.scratchGui.mode.isPlayerOnly),
+    recording: state.scratchGui.stageRecord.recording,
+    recordingPaused: state.scratchGui.stageRecord.paused,
+    recordingForceStopped: state.scratchGui.stageRecord.forceStop,
+    recordingDuration: state.scratchGui.stageRecord.recordDuration
 });
 
 const mapDispatchToProps = dispatch => ({
     onActivateColorPicker: () => dispatch(activateColorPicker()),
-    onDeactivateColorPicker: color => dispatch(deactivateColorPicker(color))
+    onDeactivateColorPicker: color => dispatch(deactivateColorPicker(color)),
+    onStopRecording: forceStop => dispatch(stopRecording(forceStop))
 });
 
 export default connect(
