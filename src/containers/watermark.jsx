@@ -27,6 +27,7 @@ class Watermark extends React.Component {
     }
 
     render () {
+        console.log('rerendering watermark');
         const componentProps = omit(this.props, ['asset', 'vm']);
         return (
             <WatermarkComponent
@@ -65,7 +66,7 @@ const mapStateToProps = state => {
 const ConnectedComponent = connect(
     mapStateToProps
 )(
-    DebouncedPropertyHOC('asset', 500)(Watermark)
+    DebouncedPropertyHOC('asset', 2000)(Watermark)
 );
 
 export default ConnectedComponent;
